@@ -44,17 +44,17 @@ Stock-Price-Predictor/
 git clone https://github.com/yourusername/Stock-Price-Predictor.git
 cd Stock-Price-Predictor
 ```
-2. Create Conda Environment
+### 2. Create Conda Environment
 ```bash
 conda env create -f environment.yml
 conda activate stock_predictor
 ```
-4. (Optional) Install using pip
+### 3. (Optional) Install using pip
 ```bash
 pip install -r requirements.txt
 ```
 ▶️ Usage
-1. Fetch stock data
+### 1. Fetch stock data
 ```bash
 python data/fetch_data.py
 ```
@@ -62,19 +62,19 @@ Downloads data for the specified ticker (default: AAPL).
 
 Saved to data/AAPL_stock.csv.
 
-2. Run Jupyter Notebook
+### 2. Run Jupyter Notebook
 ```bash
 jupyter notebook notebooks/stock_predictor.ipynb
 ```
 Explore data, train model, evaluate, visualize, and predict future prices.
 
-📊 Example Output
+## 📊 Example Output
 - RMSE: ~2.45
 - R² Score: ~0.95
 - Plot comparing actual vs predicted prices:
 
 
-📌 Future Improvements
+## 📌 Future Improvements
 - Add LSTM or GRU for sequential prediction.
 
 - Include more technical indicators (RSI, MACD, Bollinger Bands).
@@ -83,7 +83,7 @@ Explore data, train model, evaluate, visualize, and predict future prices.
 
 - Predict multiple days ahead instead of just next-day price.
 
-⚡ Dependencies
+## ⚡ Dependencies
 - Python 3.10
 - pandas
 - numpy
@@ -92,6 +92,6 @@ Explore data, train model, evaluate, visualize, and predict future prices.
 - scikit-learn
 - yfinance
 
-📄 License
+## 📄 License
 This project is licensed under the Apache License 2.0.
 
